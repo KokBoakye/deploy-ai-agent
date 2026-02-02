@@ -4,8 +4,8 @@ variable "aws_region" {
   default     = "us-east-1"
 }
 
-variable "anthropic_api_key" {
-  description = "Anthropic API Key"
-  type        = string
-  sensitive   = true
-}
+# variable "anthropic_api_key" {
+#   description = "Anthropic API Key"
+#   type        = string
+#   sensitive   = true
+# }
