@@ -203,7 +203,7 @@ resource "aws_cloudwatch_log_group" "app" {
 
 # Secrets Manager
 resource "aws_secretsmanager_secret" "anthropic_key" {
-  name = "ai-agent/anthropic-api-key-1"
+  name = "ai-agent/anthropic-api-key-2"
 
   recovery_window_in_days = 0
 }
