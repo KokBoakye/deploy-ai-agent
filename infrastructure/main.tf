@@ -208,10 +208,10 @@ resource "aws_secretsmanager_secret" "anthropic_key" {
   recovery_window_in_days = 0
 }
 
-resource "aws_secretsmanager_secret_version" "anthropic_key" {
-  secret_id     = aws_secretsmanager_secret.anthropic_key.id
-  secret_string = var.anthropic_api_key
-}
+# resource "aws_secretsmanager_secret_version" "anthropic_key" {
+#   secret_id     = aws_secretsmanager_secret.anthropic_key.id
+#   secret_string = var.anthropic_api_key
+# }
 
 # IAM Roles
 resource "aws_iam_role" "ecs_execution_role" {

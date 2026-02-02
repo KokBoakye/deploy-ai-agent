@@ -70,7 +70,7 @@ jobs:
           terraform apply -auto-approve
 
   build-and-push:
-    needs: test
+    needs: terraform
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     
